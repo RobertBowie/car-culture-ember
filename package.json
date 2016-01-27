@@ -1,7 +1,7 @@
 {
   "name": "car-culture-ember",
-  "version": "0.0.0",
-  "description": "Small description for car-culture-ember goes here",
+  "version": "0.0.2",
+  "description": "Ember re-factor of Car Culture crowd source app",
   "private": true,
   "directories": {
     "doc": "doc",
