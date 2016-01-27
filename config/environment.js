@@ -13,6 +13,10 @@ module.exports = function(environment) {
       }
     },
 
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' localhost:49152 127.0.0.1:49152"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
