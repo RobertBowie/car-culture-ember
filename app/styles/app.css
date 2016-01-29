@@ -1,0 +1,77 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #D5D5D5;
+}
+
+a {
+  color: #C66D0E;
+}
+
+a:hover, a:focus {
+    color: #743600;
+    text-decoration: underline;
+}
+
+.VEP {
+  margin-left: 70%;
+  font-size: 3.4em;
+  color: #D5D5D5;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 105%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+  background-color: #222;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.jumbotron {
+  background-color: #D5D5D5;
+  height: 615px;
+  width: 90%;
+  padding: 10px;
+}
+
+.btn-lg {
+  background-color: #222;
+  border-color: #FFFFFF;
+  font-size: 28px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #777777;
+    border-color: #000000;
+}
+
+.dbevents {
+  margin-top: 15%;
+  font-size: large;
+}
+
+.eventli {
+  margin-left: -50px;
+}
+
+.filterdiv {
+  margin: 20px -20px;
+}
+
+.btn-xs {
+  background-color: #222;
+  border-color: #FFFFFF;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.count-span {
+    color: #C66D0E;
+    font-size: 35px;
+}
