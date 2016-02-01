@@ -1,0 +1,51 @@
+<div>
+  <nav role="navigation" class="navbar navbar-inverse">
+    <h1 class="VEP">Vehicle Event Profile</h1>
+  </nav>
+  <div class="container jumbotron">
+    <div class="row">
+      <div class="col-lg-7">
+        <h1>Welcome to your Vehicle Profile!</h1>
+        <h2>This will be the home of all your vehicle data.</h2>
+        <p>Check the database for vehicle events to get started!</p>
+        <p><a id="getVehicleData" href="#" role="button" class="btn btn-primary btn-lg">Get Vehicle Event Data</a></p>
+        <h3>Your Vehicle</h3>
+        <ul>
+          <li>Make: Subaru</li>
+          <li>Model: Impreza</li>
+          <li>Trim: WRX</li>
+          <li>Body: Wagon</li>
+          <li>Mileage: 102,052mi</li>
+          <li>Mods:
+            <ul>
+              <li>Cold Air Intake</li>
+              <li>Cat-back Exhaust</li>
+              <li>Upgraded Intercooler</li>
+            </ul>
+          </li>
+          <li>Events: <a href="#">add Events!</a>
+            <ul>
+              <li>Scheduled Maintenance:   95,000mi</li>
+              <li>Replaced Wheel Bearings: 98,000mi</li>
+              <li>Etc: 99,500mi</li>
+              <li>More Etc: 101,255mi</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        <ul class="dbevents">
+          {{#each model as |vehicle|}}
+            <li>{{vehicle.make}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted"></p>
+    </div>
+  </footer>
+  <script src="./javascripts/c2.js"></script>
+</div>

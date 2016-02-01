@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  div
+    nav.navbar.navbar-inverse(role='navigation')
+      h1.VEP Vehicle Event Profile
+    .container.jumbotron
+      .row
+        .col-lg-7
+          h1 Welcome to your Vehicle Profile!
+          h2 This will be the home of all your vehicle data.
+          p Check the database for vehicle events to get started!
+          p
+            a#getVehicleData.btn.btn-primary.btn-lg(href='#', role='button') Get Vehicle Event Data
+          h3 Your Vehicle
+          ul
+            li Make: Subaru
+            li Model: Impreza
+            li Trim: WRX
+            li Body: Wagon
+            li Mileage: 102,052mi
+            li
+              | Mods:
+              ul
+                li Cold Air Intake
+                li Cat-back Exhaust
+                li Upgraded Intercooler
+            li
+              | Events: 
+              a(href='#') add Events!
+              ul
+                li Scheduled Maintenance:   95,000mi
+                li Replaced Wheel Bearings: 98,000mi
+                li Etc: 99,500mi
+                li More Etc: 101,255mi
+        .col-lg-5
+          ul.dbevents
+            //- append results in JS file
+    footer.footer
+      .container
+        p.text-muted
+    script(src='./javascripts/c2.js')
