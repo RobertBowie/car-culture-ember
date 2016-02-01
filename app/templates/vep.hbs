@@ -35,6 +35,9 @@
       </div>
       <div class="col-lg-5">
         <ul class="dbevents">
+          {{#each model as |vehicle|}}
+            <li>{{vehicle.make}}</li>
+          {{/each}}
         </ul>
       </div>
     </div>
