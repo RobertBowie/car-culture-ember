@@ -15,6 +15,14 @@
             {{#link-to 'index' tagName="li"}}<a href="">Home</a>{{/link-to}}
             {{#link-to 'vep' tagName="li"}}<a href="">VEP</a>{{/link-to}}
       </ul>
+      <p class="navbar-text navbar-right avatar"><img src={{session.currentUser.google.cachedUserProfile.avatar_url}} class="img-circle" /></p>
+      <ul class="nav navbar-nav navbar-right">
+        {{#unless session.isAuthenticated}}
+          <li><a href="" {{action "login" on="click"}}>Login</a></li>
+        {{else}}
+          <li><a href="" {{action "logOut" on="click"}}>Log Out</a></li>
+        {{/unless}}
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

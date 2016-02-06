@@ -1,27 +1,3 @@
 <h2 id="title">Welcome to Car Culture</h2>
 
 {{outlet}}
-
-
-{{#unless session.isAuthenticated}}
-  <p class="lead button">  
-    <button {{action "login"}} class="btn btn-default">
-      {{fa-icon "google"}}
-        Sign in with Google+
-    </button>
-  </p>
-{{/unless}}
-
-
-{{#if session.isAuthenticated}}
-  <div class="collapse navbar-collapse">
-    <ul class="nav navbar-nav">
-      <li> {{#link-to "vep"}} All {{/link-to}} </li>
-    </ul>
-
-    <p class="navbar-text navbar-right avatar"><img src={{session.currentUser.google.cachedUserProfile.avatar_url}} class="img-circle" /></p>
-  </div>
-  <button {{action "logOut"}} class="btn btn-default">
-    Sign Out
-  </button>
-{{/if}}
