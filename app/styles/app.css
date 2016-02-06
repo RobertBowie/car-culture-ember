@@ -22,9 +22,8 @@ a:hover, a:focus {
 .footer {
   position: absolute;
   bottom: 0;
-  width: 105%;
   /* Set the fixed height of the footer here */
-  height: 200px;
+  height: 10%;
   background-color: #222;
 }
 
