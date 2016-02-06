@@ -1,6 +1,3 @@
-/* global Firebase */
-/* global Promise */
-
 import Ember from "ember";
 
 var session = Ember.Object.extend({  
