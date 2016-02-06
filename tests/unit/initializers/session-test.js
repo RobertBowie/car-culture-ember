@@ -18,5 +18,5 @@ test('it works', function(assert) {
   SessionInitializer.initialize(null, application);
 
   // you would normally confirm the results of the initializer here
-  assert.ok(true);
+  assert.ok(application.session);
 });

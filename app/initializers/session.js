@@ -27,6 +27,14 @@ var session = Ember.Object.extend({
     });
   },
 
+  logOut: function() {
+    var context = this;
+    return new Promise(function(resolve) {
+      context.get("ref").unauth();
+      resolve();
+    });
+  },
+
   currentUser: function() {
     return this.get("ref").getAuth();
   }.property("isAuthenticated")

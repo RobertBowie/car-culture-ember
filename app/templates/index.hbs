@@ -3,14 +3,14 @@
 {{outlet}}
 
 
-{{#if true}}
+{{#unless session.isAuthenticated}}
   <p class="lead button">  
     <button {{action "login"}} class="btn btn-default">
       {{fa-icon "google"}}
         Sign in with Google+
     </button>
   </p>
-{{/if}}
+{{/unless}}
 
 
 {{#if session.isAuthenticated}}
@@ -21,4 +21,7 @@
 
     <p class="navbar-text navbar-right avatar"><img src={{session.currentUser.google.cachedUserProfile.avatar_url}} class="img-circle" /></p>
   </div>
+  <button {{action "logOut"}} class="btn btn-default">
+    Sign Out
+  </button>
 {{/if}}

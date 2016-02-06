@@ -14,7 +14,15 @@ export default Ember.Route.extend({
       }, function() {
         // User rejected authentication request
       });
+    },
+
+    logOut: function() {
+      var controller = this;
+      controller.get("session").logOut().then(function() {
+        console.log("Logged Out");
+      });
     }
+
   },
 
   _displayAlert: function(text) {
