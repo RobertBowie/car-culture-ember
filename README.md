@@ -1,12 +1,12 @@
 # Car-culture-ember
 
-This README outlines the details of collaborating on this Ember application.
-
 Car culture is an app for car enthusiasts looking for reliable, real world info on their vehicle.
 
   > Car Culture answers the question 'What next?'.  You tell the app a bit about your car and we dig through
 our database of user experiences for the next major issues (or upgrades!) you should watch out for.  The more users
 that are a part of Car Culture the more reliable and comprehensive our information becomes.
+
+The following outlines the details of collaborating on this Ember application.  Check out the live version at https://car-culture-ember.herokuapp.com/
 
 ## Prerequisites
 
