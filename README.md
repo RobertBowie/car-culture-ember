@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/RobertBowie/car-culture-ember.png?label=ready&title=Ready)](https://waffle.io/RobertBowie/car-culture-ember)
 # Car-culture-ember
 
 Car culture is an app for car enthusiasts looking for reliable, real world info on their vehicle.
